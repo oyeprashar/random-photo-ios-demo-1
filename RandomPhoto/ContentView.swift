@@ -9,13 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        
+        ZStack {
+            Color(.black)
+                .ignoresSafeArea()
+            
+            VStack {
+                
+            
+                Image("wallpaperflare.com_wallpaper (1)")
+                    .resizable()
+                    .cornerRadius(10)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.all)
+                    .shadow(radius: 50)
+                
+                
+                Text("Windows XP")
+                    .font(.title)
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.white)
+                
+            }
+            
         }
-        .padding()
+
+        
+        
+        
+        
+        
+        
     }
 }
 
